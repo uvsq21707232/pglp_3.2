@@ -1,46 +1,36 @@
 package exo3.ocp;
+import java.util.*;
 
-import java.util.Date;
-import java.util.List;
 
 public class Employe{
 	
-	 protected double salaire=1500;
-	 protected  int annee_entree;
-	 protected  int annee_cours;
+	 private final String nom;
+	 private final int annee_entree;
+	 private final int salaire=1500;
 	
-	public Employe(double salaire, int annee_entree, int annee_cours) {
-
-		this.salaire = salaire;
+	
+	public Employe(String nom, int annee_entree) {
+		this.nom=nom;
 		this.annee_entree = annee_entree;
-		this.annee_cours = annee_cours;
+	
 	}
 
 
-public double salaire() {
 	
-	 double diff = annee_cours- annee_entree ;
+public int salaire() {
+	
+		Calendar calendrier = Calendar.getInstance();
+		int annee_en_cours = calendrier.get(Calendar.YEAR);
+		int diff= annee_en_cours-annee_entree;
+		
 	 if (diff>0) {
-				double sal_inter=salaire+(diff*20);
-				return sal_inter;
+	      int new_salaire=1500+(diff*20);
+				
+	return new_salaire;
 		 
 	 } else
-	return  salaire;
+	return  salaire ;
 }
-
-
-
-public  double salaire_total(List<Employe> employes) {
-	double salaire_totale = 0;
-	
-	for (Employe emp : employes) {
-		
-	
-	}
-	
-	return  salaire_totale;
-}
-
 
 }
 		
