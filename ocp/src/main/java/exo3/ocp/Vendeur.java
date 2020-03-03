@@ -1,6 +1,6 @@
 package exo3.ocp;
 
-public class Vendeur extends Employe{
+public class Vendeur extends Employe {
 
 	 private int commission;
 
@@ -13,7 +13,8 @@ public class Vendeur extends Employe{
 	
 	@Override
 	public int salaire() {
-		return super.salaire() + commission;
+		int nvx_salaire=super.salaire() + commission;
+		return nvx_salaire ;
 	}
 	
 
