@@ -8,7 +8,7 @@ public class TestManager {
 	@Test
 	public void testSalaireManager() {
 		Manager manager = new Manager("john",2019,2);
-		assertTrue(manager.salaire() == 1500 + 200);//salaire 1720
+		assertTrue(manager.salaire() == 1520 + 200);//salaire 1720
 	}
 
 }

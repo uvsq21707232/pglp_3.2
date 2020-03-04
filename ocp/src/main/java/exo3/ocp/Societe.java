@@ -31,7 +31,7 @@ public class Societe {
 
 	/* méthode pour calculer la somme des salaires de tous les employes  de la sociéte*/
 	
-	public int calculSommeSalaires() {
+	public int calculSalairesTotal() {
 		int somme_salaires=0;
 		
 		for(Employe employe: employes_societe) {

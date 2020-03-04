@@ -10,7 +10,7 @@ public class TestVendeur {
 	@Test
 	public void testSalaireVendeur() {
 		Vendeur vendeur = new Vendeur("nadal",2019,300);
-		assertTrue(vendeur.salaire() == 1500 + 300);//salaire 1820
+		assertTrue(vendeur.salaire() == 1520 + 300);//salaire 1820
 	}
 		
 
